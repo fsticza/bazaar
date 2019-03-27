@@ -1,0 +1,74 @@
+{
+  "name": "bazaar-api",
+  "version": "1.0.0",
+  "description": "Bazaar Web API",
+  "author": "Ferenc Sticza <ferenc.sticza@gmail.com>",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon localhost 3001",
+    "start": "node --inspect index.js",
+    "test": "ava",
+    "watch": "npm test -- --watch",
+    "coverage": "nyc npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/bazaar/api.git"
+  },
+  "keywords": [
+    "bazaar",
+    "API",
+    "openAPI",
+    "koa"
+  ],
+  "bugs": {
+    "url": "https://gitlab.com/bazaar/issues"
+  },
+  "homepage": "https://gitlab.com/bazaar/api#README",
+  "dependencies": {
+    "@koa/cors": "^2.2.2",
+    "aws-sdk": "^2.376.0",
+    "dotenv": "^6.2.0",
+    "json-schema-ref-parser": "^6.0.2",
+    "jsonwebtoken": "^8.4.0",
+    "koa": "^2.6.2",
+    "koa-body": "^4.0.4",
+    "koa-helmet": "^4.0.0",
+    "koa-json": "^2.0.2",
+    "koa-jwt": "^3.5.1",
+    "koa-logger": "^3.2.0",
+    "koa-router": "^7.4.0",
+    "koa-unless": "^1.0.7",
+    "lodash": "^4.17.11",
+    "mongoose": "^5.3.16",
+    "urijs": "^1.19.1"
+  },
+  "devDependencies": {
+    "ava": "^0.25.0",
+    "babel-polyfill": "^6.26.0",
+    "eslint": "^5.10.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^8.0.0",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "mongodb-memory-server": "^2.8.0",
+    "nodemon": "^1.18.8",
+    "nyc": "^13.1.0",
+    "request": "^2.88.0",
+    "supertest": "^3.3.0"
+  },
+  "engines": {
+    "node": ">= 6.0.0",
+    "npm": ">= 3.0.0"
+  },
+  "ava": {
+    "files": [
+      "**/*.spec.js"
+    ],
+    "require": [
+      "babel-register",
+      "babel-polyfill"
+    ]
+  }
+}

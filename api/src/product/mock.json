@@ -1,0 +1,13 @@
+[{
+  "title": "title",
+  "description": "description",
+  "created": {
+    "by": "5a562c67b710c07926c10f1f",
+    "at": "2018-01-10T15:46:54.128Z"
+  },
+  "startsAt": "2018-01-10T15:46:54.128Z",
+  "endsAt": "2018-01-10T16:46:54.128Z",
+  "kind": ["science"],
+  "limit": 10,
+  "attendees": []
+}]

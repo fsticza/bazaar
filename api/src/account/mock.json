@@ -1,0 +1,14 @@
+[{
+  "firstName": "Bazaar",
+  "lastName": "Test",
+  "email": "test@bazaar.com",
+  "password": "test",
+  "role": ["USER", "TEST"]
+},
+{
+  "firstName": "Ede",
+  "lastName": "Teller",
+  "email": "teller@bazaar.com",
+  "password": "teller",
+  "role": ["USER"]
+}]

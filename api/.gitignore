@@ -1,0 +1,6 @@
+node_modules
+.env
+config/bazaar-*.json
+coverage
+.nyc_output
+data

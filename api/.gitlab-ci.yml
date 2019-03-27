@@ -1,0 +1,29 @@
+image: node:latest
+
+stages:
+  - test
+  - deploy
+
+before_script:
+  - apt-get update -qy
+
+unit_tests:
+  image: node:latest
+  stage: test
+  script:
+    - npm install
+    - npm run test
+  cache:
+    paths:
+    - node_modules/
+  only:
+    - master
+
+staging:
+  image: ruby:2.3
+  stage: deploy
+  script:
+    - gem install dpl
+    - dpl --provider=heroku --app=bazaar-api --api-key=$HEROKU_API_KEY --strategy=git
+  only:
+    - master

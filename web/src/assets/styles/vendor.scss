@@ -1,0 +1,14 @@
+$enable-rounded: false;
+
+$blue:    #33b5e5 !default;
+$indigo:  #6610f2 !default;
+$purple:  #6f42c1 !default;
+$pink:    #e83e8c !default;
+$red:     #ff4444 !default;
+$orange:  #ffbb33 !default;
+$yellow:  #ffc107 !default;
+$green:   #00C851 !default;
+$teal:    #20c997 !default;
+$cyan:    #17a2b8 !default;
+
+@import "../../../node_modules/bootstrap/scss/bootstrap";
